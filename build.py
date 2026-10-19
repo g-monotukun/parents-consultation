@@ -55,7 +55,13 @@ def version(name):
 
 # 広告キーごとの商品紹介。記事中の <div class="aff" data-aff="キー"></div> が商品ボックスになる。
 # テキストリンクは links.js の「キー_text」に登録するとボタンとして表示される。
-PRODUCTS = {}
+PRODUCTS = {
+    "poimitsu": dict(
+        name="ぽいみつ", color="teal", icon="shield", badge="無料一括見積もり",
+        tagline="不用品回収・遺品整理・空き家の片づけを、複数の業者からまとめて見積もりできる",
+        points=["見積もりは無料。比べてから依頼するかを決められる", "ゴミ屋敷・遺品整理・空き家の片づけにも対応", "1社ずつ問い合わせる手間を減らせる"],
+        article="cleanup-estimate"),
+}
 
 
 def product_box(key, p, with_banner=True):
