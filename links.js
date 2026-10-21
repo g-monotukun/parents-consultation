@@ -7,6 +7,10 @@ const AFF_LINKS = {
   poimitsu_text: ``,
   otakiage: `<a href="https://t.afi-b.com/visit.php?a=310103a-x340547m&p=n997772N" rel="nofollow"><img src="https://www.afi-b.com/upload_image/10103-1533815792-3.jpg" width="300" height="250" style="border:none;" alt="みんなのお焚き上げ" /></a><img src="https://t.afi-b.com/lead/310103a/n997772N/x340547m" width="1" height="1" style="border:none;" />`, // みんなのお焚き上げ（afb）※社名・商標でのリスティング出稿NG
   otakiage_text: ``,
+  uriel: `<a href="https://px.a8.net/svt/ejp?a8mat=4BEK9E+490GSI+5O4W+BXB8X" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=261019922257&wid=003&eno=01&mid=s00000026456002003000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BEK9E+490GSI+5O4W+BXB8X" alt="">`, // 骨董の出張買取ウリエル（A8.net）※社名・サービス名でのリスティングNG
+  uriel_text: ``,
 };
 
 document.querySelectorAll("[data-aff]").forEach((el) => {

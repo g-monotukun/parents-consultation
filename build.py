@@ -44,6 +44,7 @@ ICONS = {
     "shield": '<path d="M12 3.5 5 6.5v5c0 4.3 2.9 7.8 7 9 4.1-1.2 7-4.7 7-9v-5l-7-3Z"/><path d="m9 12 2.2 2.2L15.5 10"/>',
     "razor": '<path d="M6 4.5h12v5H6z"/><path d="M8 9.5v2M12 9.5v2M16 9.5v2"/><path d="M12 11.5V20"/>',
     "heart": '<path d="M12 19.5s-7-4.4-7-9.5a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.1-7 9.5-7 9.5Z"/>',
+    "vase": '<path d="M9 3.5h6M10 3.5v3c-2.5 1.5-4 4-4 7 0 3.6 2.7 6.5 6 6.5s6-2.9 6-6.5c0-3-1.5-5.5-4-7v-3"/>',
     "check": '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
     "pen": '<path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4"/>',
 }
@@ -57,6 +58,11 @@ def version(name):
 # 広告キーごとの商品紹介。記事中の <div class="aff" data-aff="キー"></div> が商品ボックスになる。
 # テキストリンクは links.js の「キー_text」に登録するとボタンとして表示される。
 PRODUCTS = {
+    "uriel": dict(
+        name="骨董の出張買取ウリエル", color="amber", icon="vase", badge="無料の出張査定",
+        tagline="骨董品や古い美術品を、自宅まで来て無料で査定してくれる出張買取サービス",
+        points=["査定は無料。金額を聞いてから売るかどうか決められる", "自宅まで来てくれるので、重い物や量が多くても運ばなくていい", "対応エリアや買取品目は公式サイトで確認できる"],
+        article="antique-appraisal"),
     "otakiage": dict(
         name="みんなのお焚き上げ", color="violet", icon="heart", badge="郵送でお焚き上げ",
         tagline="捨てにくい思い出の品を、箱に詰めて送るだけで供養してもらえるサービス",
@@ -254,6 +260,7 @@ GOALS = [
     ("実家の片づけを業者に頼みたい", "無料見積もりの取り方", "cleanup-estimate", "shield", "teal"),
     ("老人ホームを探し始めたい", "資料請求と見学のポイント", "nursing-home-search", "phone", "sky"),
     ("捨てにくい物をどうするか迷っている", "お焚き上げ・供養の方法", "hard-to-discard", "heart", "violet"),
+    ("骨董品や古い道具に値段がつくか知りたい", "出張買取の無料査定", "antique-appraisal", "vase", "amber"),
 ]
 
 
