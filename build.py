@@ -43,6 +43,7 @@ ICONS = {
     "phone": '<rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/>',
     "shield": '<path d="M12 3.5 5 6.5v5c0 4.3 2.9 7.8 7 9 4.1-1.2 7-4.7 7-9v-5l-7-3Z"/><path d="m9 12 2.2 2.2L15.5 10"/>',
     "razor": '<path d="M6 4.5h12v5H6z"/><path d="M8 9.5v2M12 9.5v2M16 9.5v2"/><path d="M12 11.5V20"/>',
+    "heart": '<path d="M12 19.5s-7-4.4-7-9.5a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.1-7 9.5-7 9.5Z"/>',
     "check": '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
     "pen": '<path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4"/>',
 }
@@ -56,6 +57,11 @@ def version(name):
 # 広告キーごとの商品紹介。記事中の <div class="aff" data-aff="キー"></div> が商品ボックスになる。
 # テキストリンクは links.js の「キー_text」に登録するとボタンとして表示される。
 PRODUCTS = {
+    "otakiage": dict(
+        name="みんなのお焚き上げ", color="violet", icon="heart", badge="郵送でお焚き上げ",
+        tagline="捨てにくい思い出の品を、箱に詰めて送るだけで供養してもらえるサービス",
+        points=["箱に詰めて送るだけ。寺社に持ち込む手間がない", "遺品・人形・写真など、捨てにくい物を供養してもらえる", "送れる物や料金は公式サイトで確認できる"],
+        article="hard-to-discard"),
     "poimitsu": dict(
         name="ぽいみつ", color="teal", icon="shield", badge="無料一括見積もり",
         tagline="不用品回収・遺品整理・空き家の片づけを、複数の業者からまとめて見積もりできる",
@@ -247,6 +253,7 @@ GOALS = [
     ("帰省のときに確認しておきたい", "親と実家のチェックリスト", "homecoming-checklist", "calendar", "amber"),
     ("実家の片づけを業者に頼みたい", "無料見積もりの取り方", "cleanup-estimate", "shield", "teal"),
     ("老人ホームを探し始めたい", "資料請求と見学のポイント", "nursing-home-search", "phone", "sky"),
+    ("捨てにくい物をどうするか迷っている", "お焚き上げ・供養の方法", "hard-to-discard", "heart", "violet"),
 ]
 
 
