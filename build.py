@@ -30,6 +30,18 @@ SITE = "親と実家の相談室"
 TAGLINE = "親のこと、実家のこと。ひとりで抱え込まないために。"
 BASE_URL = "https://g-monotukun.github.io/parents-consultation/"
 # Google Search Console の所有権確認用
+# Google アナリティクス（GA4）の測定ID（例: "G-XXXXXXXXXX"）。空なら計測タグを入れない
+GA_ID = ""
+
+
+def ga_tag():
+    if not GA_ID:
+        return ""
+    return (f'\n<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>'
+            f'\n<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}'
+            f"gtag('js',new Date());gtag('config','{GA_ID}');</script>")
+
+
 GSC_META = '\n<meta name="google-site-verification" content="g2Jn0JbKjPQR9hn0YPAHpSJyRZgExQNaeE51vIjmieE">'
 SITE_DESC = "親の介護、実家の片づけ、遺品整理など、家族のこれからについて、相談や見積もりの前に知っておきたい基礎知識をまとめるサイトです。"
 
@@ -155,7 +167,7 @@ def layout(title, description, body, p, is_home=False, path="", head=""):
 <meta property="og:description" content="{html.escape(description)}">
 <meta property="og:type" content="{'website' if is_home else 'article'}">
 <meta property="og:url" content="{BASE_URL}{path}">
-<link rel="canonical" href="{BASE_URL}{path}">{GSC_META if is_home else ""}{head}
+<link rel="canonical" href="{BASE_URL}{path}">{GSC_META if is_home else ""}{ga_tag()}{head}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">

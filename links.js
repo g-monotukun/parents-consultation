@@ -18,3 +18,14 @@ document.querySelectorAll("[data-aff]").forEach((el) => {
   if (html) el.innerHTML = html;
   else el.remove();
 });
+
+// 広告のクリックを、案件のキーと記事ごとに Google アナリティクスへ記録する（GA_ID が未設定なら何もしない）
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("[data-aff] a");
+  if (!a || typeof gtag !== "function") return;
+  gtag("event", "aff_click", {
+    program: a.closest("[data-aff]").dataset.aff,
+    page_path: location.pathname,
+    transport_type: "beacon",
+  });
+});
