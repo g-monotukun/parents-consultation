@@ -8,6 +8,11 @@ const AFF_LINKS = {
 <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4BEK9E+40OEBM+5Y1K+5YRHE" alt="">`,
   otakiage: `<a href="https://t.afi-b.com/visit.php?a=310103a-x340547m&p=n997772N" rel="nofollow"><img src="https://www.afi-b.com/upload_image/10103-1533815792-3.jpg" width="300" height="250" style="border:none;" alt="みんなのお焚き上げ" /></a><img src="https://t.afi-b.com/lead/310103a/n997772N/x340547m" width="1" height="1" style="border:none;" />`, // みんなのお焚き上げ（afb）※社名・商標でのリスティング出稿NG
   otakiage_text: `<a href="https://t.afi-b.com/visit.php?a=310103a-6338382A&p=n997772N" rel="nofollow">送れる物と料金を見る</a><img src="https://t.afi-b.com/lead/310103a/n997772N/6338382A" width="1" height="1" style="border:none;" />`,
+  cuore: `<a href="https://px.a8.net/svt/ejp?a8mat=4BGDZ5+5H2JK2+5XEI+HW2Q9" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www24.a8.net/svt/bgt?aid=261105089331&wid=003&eno=01&mid=s00000027657003005000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BGDZ5+5H2JK2+5XEI+HW2Q9" alt="">`, // 遺品整理クオーレ（A8.net）※対応：関東・東海
+  cuore_text: `<a href="https://px.a8.net/svt/ejp?a8mat=4BGDZ5+5H2JK2+5XEI+HVFKY" rel="nofollow">【遺品整理クオーレ】</a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BGDZ5+5H2JK2+5XEI+HVFKY" alt="">`,
   nanafukujin: `<a href="https://t.afi-b.com/visit.php?a=a16764f-65357045&p=n997772N" rel="nofollow"><img src="https://www.afi-b.com/upload_image/16764-1784505523-3.png" width="300" height="250" style="border:none;" alt="ゴミ屋敷片付け七福神" /></a><img src="https://t.afi-b.com/lead/a16764f/n997772N/65357045" width="1" height="1" style="border:none;" />`, // ゴミ屋敷片付け七福神（afb）※対応：宮城・関東・山梨・東海・関西
   nanafukujin_text: `<a href="https://t.afi-b.com/visit.php?a=a16764f-f535646Y&p=n997772N" rel="nofollow">無料で見積もりを相談する</a><img src="https://t.afi-b.com/lead/a16764f/n997772N/f535646Y" width="1" height="1" style="border:none;" />`,
   chikaku: `<a href="https://px.a8.net/svt/ejp?a8mat=4BGINN+9CDZ42+5YP6+5ZEMP" rel="nofollow">

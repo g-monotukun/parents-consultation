@@ -91,6 +91,11 @@ PRODUCTS = {
         tagline="不用品回収・遺品整理・空き家の片づけを、複数の業者からまとめて見積もりできる",
         points=["見積もりは無料。比べてから依頼するかを決められる", "ゴミ屋敷・遺品整理・空き家の片づけにも対応", "1社ずつ問い合わせる手間を減らせる"],
         article="cleanup-estimate"),
+    "cuore": dict(
+        name="遺品整理クオーレ", color="violet", icon="heart", badge="遺品整理・生前整理",
+        tagline="仕分けから搬出・清掃まで任せられる遺品整理の専門業者",
+        points=["訪問・オンラインどちらの見積もりも無料", "整理後のハウスクリーニングや買取にも対応", "対応エリアは関東・東海（詳しくは公式サイトで確認）"],
+        article="cleanup-estimate"),
     "nanafukujin": dict(
         name="ゴミ屋敷片付け七福神", color="sky", icon="home", badge="訪問見積もり無料",
         tagline="物があふれた部屋の片づけを、見積もりから作業まで任せられる片づけ専門業者",
