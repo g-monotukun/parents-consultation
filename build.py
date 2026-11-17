@@ -71,6 +71,11 @@ def version(name):
 # 広告キーごとの商品紹介。記事中の <div class="aff" data-aff="キー"></div> が商品ボックスになる。
 # テキストリンクは links.js の「キー_text」に登録するとボタンとして表示される。
 PRODUCTS = {
+    "chikaku": dict(
+        name="見守りサービス ちかく", color="teal", icon="phone", badge="離れた親の見守り",
+        tagline="プライバシーに配慮して、離れて暮らす親の様子をスマホで確認できる見守りサービス",
+        points=["親に「見られている」感覚を与えにくい見守り", "安否や生活リズムをスマホで確認できる", "緊急時の対応をサポートする機能もある"],
+        article="remote-watch-service"),
     "uriel": dict(
         name="骨董の出張買取ウリエル", color="amber", icon="vase", badge="無料の出張査定",
         tagline="骨董品や古い美術品を、自宅まで来て無料で査定してくれる出張買取サービス",
@@ -278,6 +283,7 @@ GOALS = [
     ("実家の片づけを業者に頼みたい", "無料見積もりの取り方", "cleanup-estimate", "shield", "teal"),
     ("老人ホームを探し始めたい", "資料請求と見学のポイント", "nursing-home-search", "phone", "sky"),
     ("捨てにくい物をどうするか迷っている", "お焚き上げ・供養の方法", "hard-to-discard", "heart", "violet"),
+    ("離れて暮らす親の様子が心配", "見守りサービスの選び方", "remote-watch-service", "phone", "teal"),
     ("骨董品や古い道具に値段がつくか知りたい", "出張買取の無料査定", "antique-appraisal", "vase", "amber"),
 ]
 
