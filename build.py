@@ -157,7 +157,8 @@ def add_toc(body):
     if len(items) < 3:
         return body, ""
     lis = "".join(f'<li><a href="#s{i}">{t}</a></li>' for i, t in enumerate(items, 1))
-    return body, f'<nav class="toc" aria-label="目次"><p class="toc-title">目次</p><ol>{lis}</ol></nav>'
+    return body, (f'<details class="toc"><summary class="toc-title">目次（{len(items)}項目）</summary>'
+                  f'<ol>{lis}</ol></details>')
 
 
 def wrap_tables(body):
@@ -333,14 +334,14 @@ def build_home(articles):
 <div class="point">{icon('check', 22)}<div><strong>申込み前の確認点</strong><p>料金や解約など、見落としやすい条件を整理</p></div></div>
 <div class="point">{icon('check', 22)}<div><strong>無料でできることから</strong><p>資料請求や見積もりなど、負担のない一歩を紹介</p></div></div>
 </div></section>
-{picks_open}
-<h2 class="section-title">このサイトで紹介しているサービス</h2>
-<p class="section-lead">記事の内容に関連するサービスです。料金や条件は各公式サイトでご確認ください。</p>
-{picks_close}
 <main class="wrap" id="articles">
 <h2 class="section-title">新着記事</h2>
 <div class="grid">{cards}</div>
 </main>
+{picks_open}
+<h2 class="section-title">このサイトで紹介しているサービス</h2>
+<p class="section-lead">記事の内容に関連するサービスです。料金や条件は各公式サイトでご確認ください。</p>
+{picks_close}
 <section class="wrap"><div class="cta-band">
 <div><p class="cta-title">次の帰省で、少しだけ話してみませんか。</p><p>まずは知るところから始めましょう。</p></div>
 <a class="btn light" href="#goals">悩みから探す</a>

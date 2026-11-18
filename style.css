@@ -210,3 +210,25 @@ img{max-width:100%;height:auto}
 @media (max-width:640px){.article-hero{padding:18px 0 20px}}
 
 img.logo{background:none;object-fit:cover;display:block}
+
+/* layout v2 */
+details.toc summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.toc summary::-webkit-details-marker{display:none}
+details.toc summary::after{content:"開く ▾";font-size:.8rem;font-weight:500;color:var(--accent)}
+details.toc[open] summary::after{content:"閉じる ▴"}
+details.toc[open] summary{margin-bottom:6px}
+.product .aff-btn a{white-space:normal;text-align:center}
+@media (max-width:640px){
+  .grid{gap:12px}
+  .card{flex-direction:row;align-items:stretch}
+  .card .thumb{width:84px;height:auto;min-height:84px;flex:none}
+  .card .thumb .ico{width:30px;height:30px}
+  .card .thumb::after,.card .thumb-cat{display:none}
+  .card-body{padding:12px 14px}
+  .card h3{font-size:.95rem;margin:0 0 6px}
+  .card p{display:none}
+  .products{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:4px 16px 16px;margin:0 -16px}
+  .products .product{flex:0 0 80%;scroll-snap-align:start}
+  .related .grid{grid-template-columns:1fr}
+  .article-hero .hero-icon{display:none}
+}
