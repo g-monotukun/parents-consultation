@@ -208,3 +208,5 @@ img{max-width:100%;height:auto}
 .worries li{padding:3px 0}
 .worries-lead{margin:0;color:var(--accent);font-weight:700;font-size:.95rem}
 @media (max-width:640px){.article-hero{padding:18px 0 20px}}
+
+img.logo{background:none;object-fit:cover;display:block}

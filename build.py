@@ -200,12 +200,12 @@ def layout(title, description, body, p, is_home=False, path="", head=""):
 <body>
 <div class="prbar">本サイトはアフィリエイト広告（PR）を利用しています</div>
 <header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="{p}index.html"><span class="logo">家</span><span class="brand-text">{SITE}<small>{TAGLINE}</small></span></a>
+<a class="brand" href="{p}index.html"><img class="logo" src="{p}icon.png?v={version('icon.png')}" alt="" width="36" height="36"><span class="brand-text">{SITE}<small>{TAGLINE}</small></span></a>
 <nav class="gnav"><a href="{p}index.html#articles">記事一覧</a><a href="{p}about.html">運営者情報</a></nav>
 </div></header>
 {body}
 <footer class="site-footer"><div class="wrap">
-<div class="footer-brand"><span class="logo">家</span><div><strong>{SITE}</strong><p>{SITE_DESC}</p></div></div>
+<div class="footer-brand"><img class="logo" src="{p}icon.png?v={version('icon.png')}" alt="" width="36" height="36"><div><strong>{SITE}</strong><p>{SITE_DESC}</p></div></div>
 <nav class="footer-nav"><a href="{p}index.html">トップ</a><a href="{p}about.html">運営者情報</a><a href="{p}privacy.html">プライバシーポリシー</a></nav>
 <p class="copy">&copy; 2026 {SITE}</p>
 </div></footer>
@@ -286,7 +286,7 @@ def build_article(a, articles):
 </div>
 <p class="note">※本記事は一般的な情報提供を目的としています。制度や料金・条件は変わることがあるため、自治体や各公式サイトでご確認ください。</p>
 <aside class="author">
-<span class="logo big">家</span>
+<img class="logo big" src="{p}icon.png?v={version('icon.png')}" alt="" width="56" height="56">
 <div><p class="author-name">{SITE} 編集部</p>
 <p>公的機関や事業者の公開情報をもとに、相談・見積もりの前に知っておきたい基礎知識をまとめています。記事はAIを活用して作成し、公開前に運営者が内容を確認しています。</p></div>
 </aside>
