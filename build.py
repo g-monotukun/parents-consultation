@@ -183,12 +183,19 @@ def layout(title, description, body, p, is_home=False, path="", head=""):
 <meta property="og:description" content="{html.escape(description)}">
 <meta property="og:type" content="{'website' if is_home else 'article'}">
 <meta property="og:url" content="{BASE_URL}{path}">
+<meta property="og:image" content="{BASE_URL}og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="{SITE}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{BASE_URL}og.png">
 <link rel="canonical" href="{BASE_URL}{path}">{GSC_META if is_home else ""}{ga_tag()}{head}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{p}style.css?v={version('style.css')}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23b45309'/%3E%3Ctext x='16' y='21' font-size='13' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3E家%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="{BASE_URL}icon.png">
+<link rel="apple-touch-icon" href="{BASE_URL}icon.png">
 </head>
 <body>
 <div class="prbar">本サイトはアフィリエイト広告（PR）を利用しています</div>
