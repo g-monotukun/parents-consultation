@@ -254,6 +254,11 @@ def build_article(a, articles):
                   "mainEntityOfPage": f"{BASE_URL}articles/{a['slug']}.html"}
     head = f'\n<script type="application/ld+json">{json.dumps(article_ld, ensure_ascii=False)}</script>{faq_ld}'
     summary = "".join(f"<li>{icon('check', 18)}<span>{s}</span></li>" for s in a["summary"].split("|"))
+    worries_html = ""
+    if a.get("worries"):
+        items = "".join(f"<li>{w}</li>" for w in a["worries"].split("|"))
+        worries_html = (f'<div class="worries"><p class="worries-title">こんな気持ち、ありませんか？</p><ul>{items}</ul>'
+                        f'<p class="worries-lead">この記事では、まず答えを先にお伝えします。</p></div>')
     related = [r for r in articles if r["slug"] != a["slug"]]
     related.sort(key=lambda r: (r["category"] != a["category"], -int(r["order"])))
     rel_html = "".join(card(r, p) for r in related[:3])
@@ -264,6 +269,7 @@ def build_article(a, articles):
 <p class="article-meta"><span class="chip">{a['category']}</span>{dates}<span>約{reading_minutes(a['body'])}分で読めます</span></p>
 </div></div>
 <main class="wrap narrow article">
+{worries_html}
 {conclusion}
 <div class="summary"><p class="summary-title">この記事でわかること</p><ul>{summary}</ul></div>
 {quick_compare(a["body"])}

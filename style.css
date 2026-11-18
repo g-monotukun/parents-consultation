@@ -201,3 +201,10 @@ img{max-width:100%;height:auto}
 @media (max-width:520px){
   .quick th:nth-child(2),.quick td:nth-child(2){display:none}
 }
+
+.worries{background:var(--surface);border-left:4px solid var(--accent);border-radius:var(--radius);padding:16px 20px;margin:8px 0 28px}
+.worries-title{font-weight:700;margin:0 0 8px}
+.worries ul{margin:0 0 8px;padding-left:1.2em}
+.worries li{padding:3px 0}
+.worries-lead{margin:0;color:var(--accent);font-weight:700;font-size:.95rem}
+@media (max-width:640px){.article-hero{padding:18px 0 20px}}
