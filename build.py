@@ -91,6 +91,11 @@ PRODUCTS = {
         tagline="不用品回収・遺品整理・空き家の片づけを、複数の業者からまとめて見積もりできる",
         points=["見積もりは無料。比べてから依頼するかを決められる", "ゴミ屋敷・遺品整理・空き家の片づけにも対応", "1社ずつ問い合わせる手間を減らせる"],
         article="cleanup-estimate"),
+    "lifereset": dict(
+        name="ライフリセット", color="violet", icon="heart", badge="遺品整理・全国対応",
+        tagline="全国の加盟店が対応する、遺品整理・生前整理の専門サービス",
+        points=["基本料金・出張料金・現地見積もりが0円", "土日祝日も対応", "生前整理の相談もできる"],
+        article="estate-cleanup-guide"),
     "cuore": dict(
         name="遺品整理クオーレ", color="violet", icon="heart", badge="遺品整理・生前整理",
         tagline="仕分けから搬出・清掃まで任せられる遺品整理の専門業者",
@@ -302,6 +307,7 @@ GOALS = [
     ("実家の片づけを業者に頼みたい", "無料見積もりの取り方", "cleanup-estimate", "shield", "teal"),
     ("老人ホームを探し始めたい", "資料請求と見学のポイント", "nursing-home-search", "phone", "sky"),
     ("捨てにくい物をどうするか迷っている", "お焚き上げ・供養の方法", "hard-to-discard", "heart", "violet"),
+    ("遺品整理を何から始めればいいか分からない", "遺品整理の進め方", "estate-cleanup-guide", "heart", "violet"),
     ("離れて暮らす親の様子が心配", "見守りサービスの選び方", "remote-watch-service", "phone", "teal"),
     ("骨董品や古い道具に値段がつくか知りたい", "出張買取の無料査定", "antique-appraisal", "vase", "amber"),
 ]
